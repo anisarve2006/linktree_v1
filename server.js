@@ -1,10 +1,10 @@
-var express = require('express');
+var express = require("express");
 var app = express();
 
-app.use(express.static('public'));
+app.use(express.static("public"));
 
-app.use('/assets', express.static(__dirname + '/public/assets'));
+app.use("/assets", express.static(__dirname + "/public/assets"));
 
 var server = app.listen(3000, function () {
-    var port = server.address().port;
-})
+  var port = server.address().port;
+});
